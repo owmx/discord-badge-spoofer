@@ -50,15 +50,6 @@ ROOT = Path(__file__).resolve().parent
 GAMES_FILE = ROOT.parent / "data" / "games.json"     # full game list, downloaded if absent
 STATE_FILE = ROOT / "science_state.json"             # token, cookie, cached auth
 
-ME_URL = "https://discord.com/api/v9/users/@me?with_analytics_token=true"
-SCIENCE_URL = "https://discord.com/api/v9/science"
-PROPERTIES_URL = "https://cordapi.dolfi.es/api/v2/properties/windows"  # current super_props, local fallback
-GAMES_CDN_URL = "https://cdn.discordapp.com/detectables/games.json"  # used if games.json isn't there
-SUBSCRIBE_URL = "https://www.youtube.com/@solasity?sub_confirmation=1"
-DISCORD_INVITE_LABEL = "discord.gg/QEC6QttWMh"
-DISCORD_INVITE_URL = "https://discord.gg/QEC6QttWMh"
-GATE_WAIT = 10            # seconds before enter is accepted on each setup step
-
 BATCH_SIZE = 50           # events per /science request
 BATCH_DELAY = 1           # seconds between requests
 AUTH_MAX_AGE = 12 * 3600  # refetch the analytics token once the cache is older than this
